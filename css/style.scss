@@ -1,0 +1,64 @@
+/* Import _misc */
+@import '_misc/_colors';
+@import '_misc/_fonts';
+@import '_misc/_mixin';
+
+/* Base settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main styles */
+
+.form {
+    display: none;
+    &-container {
+        padding: 1rem;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20rem;
+        margin: 10rem auto 0 auto;
+        background: #c3c3c3;
+        input {
+            margin: 1.5rem auto; 
+            width: 10rem;
+        }
+    }
+    &-close {
+        position: absolute;
+        top:0;
+        right: 10px;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+}
+
+.cat {
+    &-container {
+        margin: 0 auto;
+        width: 700px;
+        position: relative;
+    }
+    &-image {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+    }
+    &-warning {
+        display: none;
+        text-align: center;
+        color: red;
+        font-size: 20px;
+        position: absolute;
+        top: 1rem;
+        right: 30%;
+    }
+}

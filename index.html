@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <a href="#modal-1" class="modal-link">Авторизируйтесь, пожалуйста!</a>
+    <div class="modal-container">
+        <form action="" class="form">
+            <div class="form-container">
+                <span class="form-close">&times;</span>
+                <label for="">Логин</label> <input type="text"> 
+                <label for="">Пароль</label> <input type="text">
+                <button>Войти</button>
+            </div> 
+        </form>
+    </div>
+
+
+
+
+    <div class="cat-container">
+
+        <img src="img/cat.jpg" class="cat-image" alt="">
+        <p class="cat-warning">Тссс, он спит, не буди его?! <br/> Этот котёнок устал от негатива <br/> дай ему отдохнуть!</p>
+
+
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+    let link = $('.modal-link'),
+        close = $('.form-close'),
+        warning = $('.cat-warning'),
+        cat = $('.cat-image'),
+        form = $('.form');
+        link.click(function() {
+            form.show();
+        });
+        close.click(function() {
+            form.hide();
+        });
+        cat.click(function() {
+            warning.show();
+        });
+
+
+    </script>
+
+</body>
+</html>
